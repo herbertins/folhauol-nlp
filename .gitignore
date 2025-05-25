@@ -1,11 +1,4 @@
-# Ignorar qualquer pasta oculta (começando com .)
 .*/
-
-# Ignorar qualquer arquivo oculto (começando com .)
 .*
-
-# ⚠️ Exceto o próprio .gitignore
 !/.gitignore
-
-# Ignorar arquivos compactados
 *.zip
