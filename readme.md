@@ -6,7 +6,7 @@ Este relatório detalha as respostas às questões propostas no trabalho final d
 
 **Qual o endereço do seu notebook (colab) executado? Use o botão de compartilhamento do colab para obter uma url.**
 
-[clique aqui para ver o notebook do projeto](https://colab.research.google.com/drive/1geunqeoRkUpoog7VM5F92qu_qtxY1cdK#scrollTo=s_NpsAsHItOr)
+[clique aqui para ver o notebook do projeto](https://github.com/herbertins/folhauol-nlp/blob/main/notebook_text_mining.ipynb)
 
 **Em qual célula está o código que realiza o download dos pacotes necessários para tokenização e stemming usando nltk?**
 
@@ -210,4 +210,4 @@ Para gerar vetores de documentos usando Doc2Vec, os passos seriam os seguintes:
 
 ## Autor
 Desenvolvido por **Herbert Fenando Jarenco de Souza Martins**  
-🔗 [GitHub Repository](https://github.com/herbertins/nlp-project)
+🔗 [GitHub Repository](https://github.com/herbertins/folhauol-nlp)
