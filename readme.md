@@ -266,6 +266,36 @@ Para gerar vetores de documentos usando Doc2Vec, os passos seriam os seguintes:
 4.  **Treinamento do Modelo:** Chamar o método `train()` no modelo Doc2Vec, passando novamente a lista de `TaggedDocument`s, o número total de exemplos (`total_examples=model.corpus_count`) e o número de épocas (`epochs=model.epochs`). Este passo treina os vetores das palavras e dos documentos.
 5.  **Extração dos Vetores:** Após o treinamento, os vetores dos documentos estão armazenados no atributo `model.dv` (ou `model.docvecs` em versões mais antigas do Gensim). Pode-se acessar o vetor de um documento específico pela sua tag. Para obter uma matriz com os vetores de todos os documentos na ordem original, seria necessário iterar pelas tags e recuperar os vetores correspondentes.
 
+**Em uma versão alternativa desse projeto, optamos por utilizar o algoritmo de K-Médias para gerar os clusters (tópicos). Qual das abordagens (TF-IDF ou Doc2Vec) seria mais adequada como processo de vetorização? Justifique com comentários sobre dimensionalidade e relação semântica entre documentos**
+
+## Escolha de Vetorização para K-Médias: TF-IDF vs. Doc2Vec
+
+Optei por utilizar o algoritmo de **K-Médias (K-Means)** para gerar os clusters de documentos (tópicos). Para isso, é fundamental selecionar uma técnica de vetorização que se alinhe às características desse algoritmo.
+
+### Comparação entre TF-IDF e Doc2Vec:
+
+#### **TF-IDF** (Term Frequency-Inverse Document Frequency)
+- **Natureza dos vetores:** Vetores com muitos zeros e poucos valores diferentes e de alta dimensionalidade (uma dimensão por palavra ou n-grama).
+- **Distância utilizada:** Funciona bem com distância euclidiana ou cosseno, que são compatíveis com a métrica usada no K-Médias.
+- **Limitação:** Por não capturar o significado das palavras nem seu contexto, documentos semanticamente similares podem ter vetores diferentes se usarem vocabulário distinto.
+- **Resultado:** Boa performance para clusters bem separados com vocabulário específico, mas limitada para identificar nuances semânticas.
+
+#### **Doc2Vec**
+- **Natureza dos vetores:** Vetores densos e de **dimensionalidade reduzida** (por exemplo, 100 a 300 dimensões), gerados por um modelo neural que leva em consideração o contexto das palavras.
+- **Vantagem semântica:** Documentos com conteúdo semelhante, mesmo usando palavras diferentes, tendem a ter vetores próximos no espaço vetorial.
+- **Adequação ao K-Médias:** Por gerar vetores mais compactos e semanticamente informativos, tende a produzir **clusters mais coerentes** quando há sobreposição de vocabulário ou temas mais subjetivos.
+
+### **Conclusão**
+Para o uso com **K-Médias**, a vetorização com **Doc2Vec é geralmente mais adequada** do que TF-IDF. Isso se deve principalmente a dois fatores:
+
+- **Menor dimensionalidade**, o que facilita o cálculo de centroides e reduz o custo computacional do algoritmo.
+- **Capacidade de capturar relações semânticas**, permitindo que documentos com conteúdo semelhante sejam agrupados mesmo quando o vocabulário difere.
+
+O TF-IDF pode ser útil quando os tópicos são muito distintos entre si em termos de vocabulário, mas é limitado em tarefas onde a **similaridade semântica é mais sutil**.
+
+
+
+
 
 ## Autor
 Desenvolvido por **Herbert Fenando Jarenco de Souza Martins**  
