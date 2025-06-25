@@ -193,56 +193,64 @@ A figura com a nuvem de palavras para cada um dos 9 tópicos.
 
 **Escreva brevemente uma descrição para cada tópico extraído. Indique se você considera o tópico extraído semanticamente consistente ou não.**
 
-### Tópico 1 – Indicadores de Mercado Internacional
+**Tópico 1 – Indicadores de Mercado Internacional**
+
 Palavras-chave: `Ebitda`, `ASX`, `Straits Times`, `Europa`, `PSI`, `Vale`, `Via Varejo`  
 Descrição: Tópico abrange índices financeiros internacionais (como ASX e Straits Times) e empresas de capital aberto, sugerindo um foco em indicadores de desempenho corporativo global.  
 **Consistência semântica:** Alta.
 
 ---
 
-### Tópico 2 – Setor Automotivo e Petrobras
+**Tópico 2 – Setor Automotivo e Petrobras**
+
 Palavras-chave: `Petrobras`, `Volkswagen`, `Mercedes`, `Oi`, `Apple`, `BNDES`, `Reuters`  
 Descrição: Mescla empresas de grande porte dos setores automotivo, telecomunicações e energia, com destaque para Petrobras e montadoras globais.  
 **Consistência semântica:** Moderada (abrange múltiplos setores).
 
 ---
 
-### Tópico 3 – Política Monetária Internacional
+**Tópico 3 – Política Monetária Internacional**
+
 Palavras-chave: `Fed`, `BC`, `Reuters`, `FMI`, `União Europeia`, `Copom`  
 Descrição: Foco claro em instituições monetárias internacionais e decisões de política econômica de impacto global.  
 **Consistência semântica:** Alta.
 
 ---
 
-### Tópico 4 – Bolsa de Valores e Ações
+**Tópico 4 – Bolsa de Valores e Ações**
+
 Palavras-chave: `Bolsa`, `Ibovespa`, `SP`, `Nasdaq`, `Itaú`, `Petrobras PN`, `Bradesco PN`  
 Descrição: Representa discussões sobre ações e índices de bolsas nacionais e internacionais, incluindo empresas listadas como Itaú, Bradesco e Petrobras.  
 **Consistência semântica:** Alta.
 
 ---
 
-### Tópico 5 – Receita Federal e Tributação
+**Tópico 5 – Receita Federal e Tributação**
+
 Palavras-chave: `Receita`, `Receita Federal`, `IR`, `INSS`, `Banco do Brasil`, `PF`, `MEI`  
 Descrição: Tópico voltado para temas de fisco, tributos, pessoa física e jurídica, incluindo obrigações fiscais e declarações.  
 **Consistência semântica:** Alta.
 
 ---
 
-### Tópico 6 – Previdência e Justiça Social
+**Tópico 6 – Previdência e Justiça Social**
+
 Palavras-chave: `INSS`, `ANMP`, `DAE`, `Caixa`, `Justiça`, `Associação Nacional dos Médicos Peritos`  
 Descrição: Aponta para o universo da previdência social, benefícios, e perícias médicas, com ênfase em atores institucionais envolvidos.  
 **Consistência semântica:** Alta.
 
 ---
 
-### Tópico 7 – Energia e Petróleo
+**Tópico 7 – Energia e Petróleo**
+
 Palavras-chave: `Petrobras`, `Opep`, `Agência Nacional de Petróleo`, `Gás Natural`, `Biocombustíveis`, `Eletrobras`  
 Descrição: Foco no setor energético e petrolífero, com menção a empresas e órgãos reguladores como ANP e Opep.  
 **Consistência semântica:** Alta.
 
 ---
 
-### Tópico 8 – Previdência e Reforma Política
+**Tópico 8 – Previdência e Reforma Política**
+
 Palavras-chave: `INSS`, `PMDB`, `PT`, `PSDB`, `Petrobras`, `Constituição`, `BNDES`  
 Descrição: Mistura temas de previdência e política, com foco em reformas constitucionais, partidos políticos e instituições como BNDES e Petrobras.  
 **Consistência semântica:** Moderada (mistura previdência com política partidária).
