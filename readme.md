@@ -302,9 +302,9 @@ Para o uso com **K-Médias**, a vetorização com **Doc2Vec é geralmente mais a
 
 O TF-IDF pode ser útil quando os tópicos são muito distintos entre si em termos de vocabulário, mas é limitado em tarefas onde a **similaridade semântica é mais sutil**.
 
+**Leia o artigo "Introducing our Hybrid lda2vec Algorithm" (https://multithreaded.stitchfix.com/blog/2016/05/27/lda2vec/#topic=38&lambda=1&term=). O algoritmo lda2vec pretende combinar o poder do word2vec com a interpretabilidade do algoritmo LDA. Em qual cenário o autor sugere que há benefícios para utilização deste novo algoritmo?**
 
-
-
+Ao ler o artigo "Introducing our Hybrid lda2vec Algorithm", entendi que o lda2vec foi proposto como uma forma de unir o poder semântico do word2vec com a interpretabilidade dos tópicos extraídos pelo LDA. O autor destaca que esse algoritmo é especialmente útil em contextos onde temos uma grande coleção de documentos e queremos identificar automaticamente temas relevantes, mas ao mesmo tempo manter uma representação vetorial rica que capture relações semânticas entre palavras e documentos. Essa combinação me parece interessante principalmente porque permite representar palavras, tópicos e documentos no mesmo espaço vetorial, possibilitando análises mais profundas sem abrir mão da interpretabilidade dos resultados.
 
 ## Autor
 Desenvolvido por **Herbert Fenando Jarenco de Souza Martins**  
