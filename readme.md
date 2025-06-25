@@ -250,6 +250,7 @@ Descrição: Mistura temas de previdência e política, com foco em reformas con
 ---
 
 **Tópico 9 – Governança e Partidos Políticos**
+
 Palavras-chave: `PT`, `PMDB`, `PSDB`, `Petrobras`, `Constituição`, `governo`, `BNDES`  
 Descrição: Este tópico trata de partidos políticos e governança, incluindo instituições públicas e empresas estatais.  
 **Consistência semântica:** Alta.
